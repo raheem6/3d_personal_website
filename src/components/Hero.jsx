@@ -21,8 +21,8 @@ const Hero = () => {
           I'm currently a Computer Science major.
           </p>
         </div>
-      </div>
-
+        </div>
+        <ComputersCanvas/>
     </section>
   );
 };
