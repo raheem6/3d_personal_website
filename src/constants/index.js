@@ -23,7 +23,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  DuncanPIC,
 } from "../assets";
+
+import me from "../assets/me.jpg";
+
+export const Duncan = DuncanPIC;
 
 export const navLinks = [
   {
@@ -33,6 +38,14 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "Resume",
+    title: "Download Resume",
   },
   {
     id: "contact",
@@ -196,6 +209,16 @@ const testimonials = [
   },
 ];
 
+const myWords = [
+  {
+    text: "Here you can download my Resume by clicking on Download button. I will be glad to our cooperation.",
+    name: "Raheem",
+    designation: "The owner",
+    company: "DataSphere",
+    image: me,
+  },
+];
+
 const projects = [
   {
     name: "Car Rent",
@@ -262,4 +285,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, testimonials, experiences, myWords, projects };
