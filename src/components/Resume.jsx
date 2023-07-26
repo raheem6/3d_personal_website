@@ -66,4 +66,4 @@ const Resume = () => {
   )
 }
 
-export default sectionWrapper(Resume, "Resume")
+export default sectionWrapper(Resume, "resume")

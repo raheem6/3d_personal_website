@@ -15,10 +15,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   tripguide,
   threejs,
@@ -36,15 +32,15 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "tech",
+    title: "Technologies",
   },
   {
     id: "projects",
     title: "Projects",
   },
   {
-    id: "Resume",
+    id: "resume",
     title: "Download Resume",
   },
   {
@@ -126,29 +122,10 @@ const technologies = [
     icon: docker,
   },
 ];
-
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
 const myWords = [
   {
     text: "Here you can download my Resume by clicking on Download button. I will be glad to our cooperation.",
     name: "Raheem",
-    designation: "The owner",
-    company: "DataSphere",
     image: me,
   },
 ];
@@ -220,4 +197,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, myWords, projects };
+export { services, technologies, myWords, projects };
