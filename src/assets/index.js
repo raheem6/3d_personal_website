@@ -19,9 +19,9 @@ import java from "./tech/java.png";
 
 import DuncanPIC from "./DuncanPIC.png";
 
-import carrent from "./carrent.png";
 import janeHop from "./janeHop.png";
-import tripguide from "./tripguide.png";
+import movieApp from "./movieApp.png";
+import todoList from "./todoList.png";
 
 export {
   DuncanPIC,
@@ -40,9 +40,9 @@ export {
   javascript,
   nodejs,
   reactjs,
-  carrent,
   janeHop,
-  tripguide,
   cplusplus,
   java,
+  movieApp,
+  todoList,
 };

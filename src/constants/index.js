@@ -10,12 +10,12 @@ import {
   nodejs,
   git,
   figma,
-  carrent,
-  tripguide,
   DuncanPIC,
   janeHop,
   cplusplus,
   java,
+  movieApp,
+  todoList,
 } from "../assets";
 
 import me from "../assets/me.jpg";
@@ -112,25 +112,25 @@ const myWords = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "To-Do List",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The To-Do List project is a simple web application that allows users to create and manage a list of tasks they need to complete. Users can add new tasks by typing them into an input field and pressing enter. Each task appears as an item in the list with a checkbox beside it. ",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: todoList,
+    source_code_link: "https://github.com/raheem6/To-do-List",
   },
   {
     name: "Double-blind medical study simulation.",
@@ -155,25 +155,25 @@ const projects = [
       "https://github.com/ajgrinds/CSC-131-Double-Blind-Medical-Simulation",
   },
   {
-    name: "Trip Guide",
+    name: "Movie App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Movie App is a web application that allows users to search and discover movies. The app displays movie posters along with their ratings, and provides a brief overview when users hover over a movie. Users can search for specific movies using the search bar.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: movieApp,
+    source_code_link: "https://github.com/raheem6/Movie-App",
   },
 ];
 
