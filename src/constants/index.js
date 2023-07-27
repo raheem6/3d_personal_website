@@ -4,22 +4,18 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
   carrent,
   tripguide,
-  threejs,
   DuncanPIC,
   janeHop,
+  cplusplus,
+  java,
 } from "../assets";
 
 import me from "../assets/me.jpg";
@@ -70,6 +66,14 @@ const services = [
 
 const technologies = [
   {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Cplusplus",
+    icon: cplusplus,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -82,32 +86,12 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -116,10 +100,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 const myWords = [
