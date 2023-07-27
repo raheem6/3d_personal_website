@@ -22,6 +22,8 @@ import me from "../assets/me.jpg";
 
 export const Duncan = DuncanPIC;
 
+export const myGithub = "https://github.com/raheem6";
+
 export const navLinks = [
   {
     id: "about",
@@ -131,6 +133,7 @@ const projects = [
     ],
     image: todoList,
     source_code_link: "https://github.com/raheem6/To-do-List",
+    demo_link: "https://to-dolist10.netlify.app/",
   },
   {
     name: "Double-blind medical study simulation.",
@@ -153,6 +156,7 @@ const projects = [
     image: janeHop,
     source_code_link:
       "https://github.com/ajgrinds/CSC-131-Double-Blind-Medical-Simulation",
+    demo_link: "https://www.youtube.com/watch?v=srDpcUSJuU8&ab_channel=khalidh",
   },
   {
     name: "Movie App",
@@ -174,6 +178,7 @@ const projects = [
     ],
     image: movieApp,
     source_code_link: "https://github.com/raheem6/Movie-App",
+    demo_link: "https://movie-app10.netlify.app",
   },
 ];
 
