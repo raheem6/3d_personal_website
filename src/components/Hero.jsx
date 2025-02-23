@@ -1,57 +1,83 @@
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import me from "../assets/me.jpg";
 
 const Hero = () => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
-      "I'm Web Developer",
-      "I'm Musician",
-      "I'm currently a Computer Science major.",
-      "GuyWhoLovesHiking.jsx",
-      "<ButLovesToCodeMore />",
+      "Web Developer",
+      "Musician",
+      "Computer Science Major",
+      "Outdoor Enthusiast",
+      "Creative Coder"
     ],
     loop: true,
     delaySpeed: 2000,
   });
 
-  const isMobile = window.matchMedia("(max-width: 640px)").matches;
-  const scrollDownClass = isMobile ? "text-xs" : "";
-  const arrowAnimationClass = isMobile ? "animate-bounce-down" : "animate-bounce";
-
   return (
-    <section className="relative w-full h-screen mx-auto">
-      <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Raheem</span>
-          </h1>
-          <p
-            className={`${styles.heroSubText} mt-2 text-white ${scrollDownClass}`}
+    <section className="relative w-full h-screen flex items-center justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Text Content */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="lg:w-1/2 text-center lg:text-left"
           >
-            {text}
-          </p>
+            <div className="mb-8 lg:mb-12">
+              <h1 className="text-4xl md:text-5xl font-light text-gray-100 mb-4">
+                Hi, I'm <span className="text-[#9F7AEA] font-medium">Raheem</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-400 font-light">
+                {text}
+              </p>
+            </div>
+
+            <div className="hidden lg:block h-px w-32 bg-gradient-to-r from-[#9F7AEA] to-transparent mb-8" />
+
+            <motion.p 
+              className="text-gray-400 text-lg max-w-xl leading-relaxed"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              Bridging technology and creativity through elegant solutions and innovative development.
+            </motion.p>
+          </motion.div>
+
+          {/* Profile Image */}
+          <motion.div 
+            className="lg:w-1/2 flex justify-center"
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#9F7AEA] to-[#667EEA] opacity-20 blur-2xl" />
+              <img 
+                src={me} 
+                alt="Raheem" 
+                className="w-full h-full rounded-full object-cover border-8 border-[#ffffff08] transform hover:scale-105 transition-all duration-300"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
-      <ComputersCanvas />
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a
-          href="#about"
-          className="w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
-        >
-          <div className={`group border-[3px] border-white rounded-full h-12 w-7 flex justify-center lg:scale-100 scale-75 ${arrowAnimationClass}`}>
-            <div className="bg-white h-3 w-1 rounded-full mt-[10px]"></div>
-          </div>
-          <p className={scrollDownClass}>Scroll Down</p>
-        </a>
-      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div 
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+      >
+        <div className="animate-bounce flex flex-col items-center text-gray-400">
+          <span className="text-sm mb-2">Explore</span>
+          <div className="w-px h-8 bg-gray-400" />
+        </div>
+      </motion.div>
     </section>
   );
 };
