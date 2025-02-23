@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
-import me from "../assets/me.jpg";
+import Tilt from "react-parallax-tilt";
+import me from "../assets/raheem.png";
 
 const Hero = () => {
   const [text] = useTypewriter({
@@ -48,27 +49,46 @@ const Hero = () => {
           </motion.div>
 
           {/* Profile Image */}
-          <motion.div 
-            className="lg:w-1/2 flex justify-center"
-            initial={{ scale: 0.95, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8 }}
+          <Tilt
+            tiltEnable={true}
+            tiltMaxAngleX={25}
+            tiltMaxAngleY={25}
+            scale={1.05}
+            transitionSpeed={500}
+            className="relative w-[320px] h-[320px]"
           >
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#9F7AEA] to-[#667EEA] opacity-20 blur-2xl" />
-              <img 
-                src={me} 
-                alt="Raheem" 
-                className="w-full h-full rounded-full object-cover border-8 border-[#ffffff08] transform hover:scale-105 transition-all duration-300"
-              />
-            </div>
-          </motion.div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#915EFF] to-[#ff61e6] rounded-full animate-pulse blur-xl opacity-75" />
+            
+            <motion.div 
+              className="relative green-pink-gradient p-1 rounded-full shadow-card overflow-hidden"
+              animate={{
+                background: [
+                  'linear-gradient(45deg, #ff61e6, #915EFF)',
+                  'linear-gradient(135deg, #915EFF, #ff61e6)',
+                  'linear-gradient(225deg, #ff61e6, #915EFF)',
+                  'linear-gradient(315deg, #915EFF, #ff61e6)',
+                ]
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+              }}
+            >
+              <div className="bg-tertiary rounded-full p-2 overflow-hidden">
+                <img 
+                  src={me} 
+                  alt="Profile" 
+                  className="w-full h-full rounded-full object-cover border-4 border-[#ffffff10] aspect-square" 
+                />
+              </div>
+            </motion.div>
+          </Tilt>
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <motion.div 
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-3 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
