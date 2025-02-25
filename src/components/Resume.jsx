@@ -5,7 +5,7 @@ import { styles } from "../styles"
 import { sectionWrapper } from "../hoc"
 import { fadeIn, textVariant } from "../utils/motion"
 import { Duncan, myWords } from "../constants"
-import ResumeDoc from "../assets/Raheem_RESUME.pdf"
+import ResumeDoc from "../assets/Raheem_Resume_2025.pdf"
 
 const Card = ({ index, text, name, designation, company, image }) => (
   <div className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full select-none">

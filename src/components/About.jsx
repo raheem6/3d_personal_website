@@ -49,7 +49,9 @@ const About = () => {
         className="flex flex-wrap items-start min-[1000px]:flex-row flex-col-reverse"
       >
         <motion.p className="mt-4 text-secondary text-[17px] min-[1000px]:max-w-lg w-full leading-[30px]">
-          I'm passionate about computer science and helping people with their queries related to it. Currently, I'm searching for an internship opportunity on Handshake and Linkedin to enhance my skills and gain practical experience in the field. I have experience in programming languages such as Java and C++, version control tools like Git and GitHub, and front-end web development with HTML, CSS, and JavaScript. Additionally, I'm multilingual and fluent in English and Arabic. Apart from my technical expertise, I'm also interested in outdoor activities like hiking, traveling, walking, and building gaming PCs.
+        I am a Computer Science student at California State University, Sacramento, with experience in IT support, network security, and web development. 
+        Currently working as a Student Assistant at the California Department of Corrections and Rehabilitation, I enhance IT support efficiency, manage Active Directory administration, and troubleshoot technical issues. 
+        Previously, I improved client engagement by 25% as a Web Developer at Bertoni Handyman Services, where I worked with my team to design and deployment of a website and admin portal.
         </motion.p>
 
         <Tilt className="xs:w-[300px] xs:h-[350px] w-full h-full m-auto max-[1000px]:my-14">

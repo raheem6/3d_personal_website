@@ -6,11 +6,11 @@ import me from "../assets/raheem.png";
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
+      "Creative Coder",
       "Web Developer",
-      "Musician",
+      "IT Service Center",
       "Computer Science Major",
-      "Outdoor Enthusiast",
-      "Creative Coder"
+      "Outdoor Enthusiast"
     ],
     loop: true,
     delaySpeed: 2000,
@@ -44,7 +44,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              Bridging technology and creativity through elegant solutions and innovative development.
+              I bridge technology and problem-solving with hands-on experience in IT support, cybersecurity, network security, and web development.
             </motion.p>
           </motion.div>
 
