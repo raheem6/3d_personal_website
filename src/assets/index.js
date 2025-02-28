@@ -15,6 +15,7 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import cplusplus from "./tech/c++.png";
 import java from "./tech/java.png";
+import AD from "./tech/AD.svg";
 
 import DuncanPIC from "./DuncanPIC.png";
 
@@ -43,4 +44,5 @@ export {
   java,
   movieApp,
   todoList,
+  AD,
 };

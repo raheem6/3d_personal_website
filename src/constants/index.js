@@ -15,6 +15,7 @@ import {
   java,
   movieApp,
   todoList,
+  AD,
 } from "../assets";
 
 import me from "../assets/me.jpg";
@@ -67,8 +68,12 @@ const technologies = [
     icon: java,
   },
   {
-    name: "Cplusplus",
+    name: "C++",
     icon: cplusplus,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "HTML 5",
@@ -79,8 +84,8 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Active Directory",
+    icon: AD,
   },
   {
     name: "React JS",
@@ -91,11 +96,11 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
 ];
